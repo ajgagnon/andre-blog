@@ -1,11 +1,13 @@
 ---
 title: "Integrating WordPress Javascript Translations with Vue.js"
 slug: wordpress-javascript-translations-with-vue-js
-description: "How to integrate WordPress javascript hooks with vue.js."
+description: "How to integrate WordPress i18n translations with Vue.js."
 date: 2019-03-06 14:43:24
 author: andre gagnon
 tags:
-    - development
+    - translate
+    - i18n
+    - wordpress
 cover: https://source.unsplash.com/dC6Pb2JdAqs
 fullscreen: false
 ---
