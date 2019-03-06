@@ -3,10 +3,10 @@ title: "Integrating WordPress Javascript i18n support with Vue.js"
 slug: wordpress-javascript-hooks-with-vue-js
 description: "How to integrate WordPress javascript hooks with vue.js."
 date: 2019-03-06 14:43:24
-author: andre
+author: andre gagnon
 tags:
     - development
-cover: https://pbs.twimg.com/profile_banners/710394749207896064/1547818514
+cover: https://source.unsplash.com/dC6Pb2JdAqs
 fullscreen: false
 ---
 
