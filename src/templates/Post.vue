@@ -25,7 +25,7 @@
                 v-for="tag in $page.post.tags"
                 :key="tag.id"
                 :to="`${tag.path}/`"
-                class="inline-block text-teal hover:text-white hover:bg-teal font-sans font-bold text-xs sm:text-sm border border-teal px-4 py-2 mr-4 mb-2 rounded-full no-underline transition-color transition-bg"
+                class="inline-block text-blue hover:text-white hover:bg-blue font-sans font-bold text-xs sm:text-sm border border-blue px-4 py-2 mr-4 mb-2 rounded-full no-underline transition-color transition-bg"
               >
                 <svg
                   class="w-3 fill-current align-middle mr-1"

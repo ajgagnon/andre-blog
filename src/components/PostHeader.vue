@@ -53,8 +53,7 @@
     <nav class="absolute pin-t pin-l z-20 mt-6 ml-6">
       <g-link
         to="/"
-        :class="[post.cover ? 'text-white border-white' : 'text-grey-darkest border-grey-dark']"
-        class="text-sm border opacity-75 hover:opacity-100 rounded-full no-underline px-4 py-2 transition-opacity"
+        class="text-sm bg-grey-darkest text-white font-mono rounded-sm no-underline px-4 py-2 transition-opacity"
       >&larr; Home</g-link>
     </nav>
   </header>
