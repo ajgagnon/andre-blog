@@ -294,8 +294,8 @@ module.exports = {
   leading: {
     none: 1,
     tight: 1.25,
-    normal: 1.6,
-    code: 1.75,
+    normal: 1.8,
+    code: 1.8,
     loose: 2
   },
 
@@ -315,7 +315,7 @@ module.exports = {
   tracking: {
     tight: "-0.05em",
     normal: "0",
-    wide: "0.05em"
+    wide: "0.1em"
   },
 
   /*

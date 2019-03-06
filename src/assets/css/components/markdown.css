@@ -15,7 +15,7 @@
   h4,
   h5,
   h6 {
-    @apply font-sans text-black my-6 mt-16;
+    @apply font-mono text-black my-6 mt-16;
   }
 
   h5,
@@ -81,7 +81,7 @@
 
 .post-cover {
   &::after {
-    @apply absolute w-full h-48 pin-l pin-b z-0;
+    @apply absolute w-full h-64 pin-l pin-b z-0;
     content: "";
     background: linear-gradient(
       to bottom,

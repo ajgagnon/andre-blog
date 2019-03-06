@@ -10,16 +10,22 @@
         :class="[post.fullscreen ? 'flex flex-col items-center m-auto pin': 'mx-auto pin-b pin-x pb-20']"
       >
         <div class="m-auto">
-          <p class="text-white text-xs mb-6 uppercase inline-block">{{ post.timeToRead }} min read</p>
+          <p
+            class="text-white text-xs mb-6 uppercase inline-block tracking-wide font-bold opacity-75"
+          >{{ post.timeToRead }} min read</p>
+
           <h1 class="sm:text-4xl font-mono font-bold mb-6 text-white">{{ post.title }}</h1>
-          <p class="text-white inline-block">
+
+          <p
+            class="text-white text-xs mb-6 uppercase inline-block tracking-wide font-bold opacity-75"
+          >
             <span v-if="post.author">
               <g-link
                 :to="`${post.author.path}/`"
-                class="text-white no-underline capitalize border-b border-transparent hover:border-white transition-border-color"
+                class="text-white no-underline border-b border-transparent hover:border-white transition-border-color"
               >{{ titleCase(post.author.title) }}</g-link>&nbsp;&bull;
             </span>
-            <time :datetime="post.datetime" class="capitalize">{{ formattedPublishDate }}</time>
+            <time :datetime="post.datetime">{{ formattedPublishDate }}</time>
           </p>
         </div>
       </div>
