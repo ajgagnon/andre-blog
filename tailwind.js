@@ -183,7 +183,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Fira Sans',
+      'Roboto',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
