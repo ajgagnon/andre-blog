@@ -1,6 +1,6 @@
 ---
-title: "Integrating WordPress Javascript i18n support with Vue.js"
-slug: wordpress-javascript-hooks-with-vue-js
+title: "Integrating WordPress Javascript Translations with Vue.js"
+slug: wordpress-javascript-translations-with-vue-js
 description: "How to integrate WordPress javascript hooks with vue.js."
 date: 2019-03-06 14:43:24
 author: andre gagnon
