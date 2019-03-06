@@ -5,11 +5,11 @@ class TailwindExtractor {
 }
 
 module.exports = {
-  siteName: "Andre Gagnon's Blog.",
-  siteDescription: "Thoughts and writings by Andre Gagnon",
-  siteUrl: "https://gridsome-starter-bleda.netlify.com",
-  titleTemplate: `%s | Andre Gagnon`,
-  icon: "src/favicon.png",
+  siteName: "v-bind",
+  siteDescription: "A blog about Vue.js",
+  siteUrl: "https://v-bind.com",
+  titleTemplate: `%s | v-bind`,
+  // icon: "src/favicon.png",
 
   transformers: {
     remark: {
@@ -50,7 +50,7 @@ module.exports = {
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
-        id: "UA-135446199-1"
+        id: "UA-1354461929-1"
       }
     },
     {
@@ -64,14 +64,14 @@ module.exports = {
       options: {
         contentTypeName: "Post",
         feedOptions: {
-          title: "Bleda, a Gridsome blog starter",
-          feed_url: "https://gridsome-starter-bleda.netlify.com/feed.xml",
-          site_url: "https://gridsome-starter-bleda.netlify.com"
+          title: "A blog about Vue.js",
+          feed_url: "https://v-bind.com/feed.xml",
+          site_url: "https://v-bind.com"
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.fields.description,
-          url: "https://gridsome-starter-bleda.netlify.com/" + node.slug,
+          url: "https://v-bind.com/" + node.slug,
           author: node.fields.author,
           date: node.fields.date
         }),

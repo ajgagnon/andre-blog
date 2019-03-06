@@ -45,8 +45,8 @@ export default {
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: this.config.siteName },
         { name: "twitter:description", content: this.config.siteDescription },
-        { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:creator", content: "@cossssmin" },
+        { name: "twitter:site", content: "@ajgagnon" },
+        { name: "twitter:creator", content: "@ajgagnon" },
         { name: "twitter:image", content: this.ogImageUrl }
       ]
     };
