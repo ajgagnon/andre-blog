@@ -7,7 +7,7 @@
             :datetime="post.datetime"
             class="text-grey-dark text-xs mb-4 uppercase inline-block"
           >{{ formatPublishDate(post.datetime) }}</time>
-          <h2 class="sm:text-4xl font-sans mb-4">
+          <h2 class="sm:text-4xl font-mono mb-4">
             <g-link :to="`${post.path}/`" class="text-black no-underline">{{ post.title }}</g-link>
           </h2>
           <p class="text-grey-dark leading-normal">

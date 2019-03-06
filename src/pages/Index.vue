@@ -1,12 +1,12 @@
 <template>
   <Layout class="bg-white">
     <main>
-      <header>
+      <header class="bg-grey-darkest">
         <div
           class="container xl:max-w-xl mx-auto text-center px-6 py-10 md:py-32 border-b border-grey-lighter"
         >
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-1">
-            <g-link to="/" class="text-black no-underline">V-Bind</g-link>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-mono font-bold mb-1">
+            <g-link to="/" class="text-grey-lightest no-underline">v-bind</g-link>
           </h1>
           <p class="text-grey-dark text-lg sm:text-3xl">A blog about Vue.js.</p>
         </div>

@@ -11,7 +11,7 @@
       >
         <div class="m-auto">
           <p class="text-white text-xs mb-6 uppercase inline-block">{{ post.timeToRead }} min read</p>
-          <h1 class="sm:text-4xl font-sans font-bold mb-6 text-white">{{ post.title }}</h1>
+          <h1 class="sm:text-4xl font-mono font-bold mb-6 text-white">{{ post.title }}</h1>
           <p class="text-white inline-block">
             <span v-if="post.author">
               <g-link
