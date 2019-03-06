@@ -4,10 +4,10 @@ export default function (Vue, { head }) {
   Vue.component('Layout', DefaultLayout)
 
   head.htmlAttrs = { lang: 'en', class: 'h-full' }
-  head.bodyAttrs = { class: 'antialiased font-serif' }
+  head.bodyAttrs = { class: 'antialiased font-sans' }
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Fira+Sans:400,700%7CCardo'
+    href: 'https://fonts.googleapis.com/css?family=Roboto:400,700'
   })
 }
