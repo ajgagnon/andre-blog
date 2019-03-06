@@ -1,22 +1,24 @@
 <template>
   <Layout class="bg-white">
-    <main>
-      <header class="bg-grey-darkest">
-        <div
-          class="container xl:max-w-xl mx-auto text-center px-6 py-10 md:py-32 border-b border-grey-lighter"
-        >
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-mono font-bold mb-1">
-            <g-link to="/" class="text-grey-lightest no-underline">v-bind</g-link>
-          </h1>
-          <p class="text-grey-dark text-lg sm:text-3xl">A blog about Vue.js.</p>
-        </div>
-      </header>
-      <section>
-        <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-      </section>
-      <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1"/>
-      <site-footer class="py-8 sm:py-16"/>
-    </main>
+    <transition name="fade" appear>
+      <main>
+        <header class="bg-grey-darkest">
+          <div
+            class="container xl:max-w-xl mx-auto text-center px-6 py-10 md:py-32 border-b border-grey-lighter"
+          >
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-mono font-bold mb-1">
+              <g-link to="/" class="text-grey-lightest no-underline">v-bind</g-link>
+            </h1>
+            <p class="text-grey-dark text-lg sm:text-3xl">A blog about Vue.js.</p>
+          </div>
+        </header>
+        <section>
+          <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+        </section>
+        <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1"/>
+        <site-footer class="py-8 sm:py-16"/>
+      </main>
+    </transition>
   </Layout>
 </template>
 
@@ -95,4 +97,15 @@ export default {
     }
   }
 </page-query>
+
+<style scoped>
+.fade-enter-active {
+  transition: opacity 0.35s, transform 0.35s ease;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-5px);
+}
+</style>
 

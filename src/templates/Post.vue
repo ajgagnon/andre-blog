@@ -1,79 +1,81 @@
 <template>
   <Layout>
-    <main>
-      <post-header :post="$page.post"/>
+    <transition name="fade" appear>
+      <main>
+        <post-header :post="$page.post"/>
 
-      <article
-        class="container mx-auto max-w-lg px-6 sm:px-12 pt-16"
-        :class="{'border-b border-grey-lighter pb-10 mb-16': !$page.post.author}"
-      >
-        <alert
-          v-if="postIsOlderThanOneYear"
-          color="orange"
-        >This post is over a year old, some of this information may be out of date.</alert>
+        <article
+          class="container mx-auto max-w-lg px-6 sm:px-12 pt-16"
+          :class="{'border-b border-grey-lighter pb-10 mb-16': !$page.post.author}"
+        >
+          <alert
+            v-if="postIsOlderThanOneYear"
+            color="orange"
+          >This post is over a year old, some of this information may be out of date.</alert>
 
-        <div
-          :class="{'pb-10': $page.post.author || $page.post.tag}"
-          class="markdown text-lg leading-normal text-grey-darkest"
-          v-html="$page.post.content"
-        />
-
-        <footer v-if="$page.post.author || $page.post.tag" class="flex flex-wrap pb-10 sm:pb-16">
-          <div>
-            <g-link
-              v-for="tag in $page.post.tags"
-              :key="tag.id"
-              :to="`${tag.path}/`"
-              class="inline-block text-teal hover:text-white hover:bg-teal font-sans font-bold text-xs sm:text-sm border border-teal px-4 py-2 mr-4 mb-2 rounded-full no-underline transition-color transition-bg"
-            >
-              <svg
-                class="w-3 fill-current align-middle mr-1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                role="img"
-              >
-                <path
-                  d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                ></path>
-              </svg>
-              {{ tag.title }}
-            </g-link>
-          </div>
           <div
-            v-if="$page.post.author"
-            class="flex flex-wrap items-center justify-center sm:justify-left border-t border-b border-grey-lighter w-full mt-10 py-10 sm:px-16"
-          >
-            <figure class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 text-center sm:text-left">
-              <g-link :to="`${$page.post.author.path}/`">
-                <img
-                  :src="avatar"
-                  :alt="$page.post.author.title"
-                  @error="imageLoadError"
-                  width="100"
-                  class="rounded-full p-4 sm:p-0"
-                >
-              </g-link>
-            </figure>
-            <div class="px-4 sm:w-4/5 text-center sm:text-left">
-              <h4 class="font-sans text-lg sm:text-xl mb-2 sm:mb-4">
-                <g-link
-                  :to="`${$page.post.author.path}/`"
-                  class="text-black no-underline capitalize border-b-2 border-transparent hover:border-black transition-border-color"
-                >{{ titleCase($page.post.author.title) }}</g-link>
-              </h4>
-              <p class="leading-normal">
-                <g-link
-                  :to="`${$page.post.author.path}/`"
-                  class="text-blue hover:text-blue-darker no-underline transition-color"
-                >See all posts by {{ titleCase($page.post.author.title) }} &rarr;</g-link>
-              </p>
-            </div>
-          </div>
-        </footer>
-      </article>
+            :class="{'pb-10': $page.post.author || $page.post.tag}"
+            class="markdown text-lg leading-normal text-grey-darkest"
+            v-html="$page.post.content"
+          />
 
-      <site-footer class="pb-8 sm:pb-10"/>
-    </main>
+          <footer v-if="$page.post.author || $page.post.tag" class="flex flex-wrap pb-10 sm:pb-16">
+            <div>
+              <g-link
+                v-for="tag in $page.post.tags"
+                :key="tag.id"
+                :to="`${tag.path}/`"
+                class="inline-block text-teal hover:text-white hover:bg-teal font-sans font-bold text-xs sm:text-sm border border-teal px-4 py-2 mr-4 mb-2 rounded-full no-underline transition-color transition-bg"
+              >
+                <svg
+                  class="w-3 fill-current align-middle mr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  role="img"
+                >
+                  <path
+                    d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                  ></path>
+                </svg>
+                {{ tag.title }}
+              </g-link>
+            </div>
+            <div
+              v-if="$page.post.author"
+              class="flex flex-wrap items-center justify-center sm:justify-left border-t border-b border-grey-lighter w-full mt-10 py-10 sm:px-16"
+            >
+              <figure class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 text-center sm:text-left">
+                <g-link :to="`${$page.post.author.path}/`">
+                  <img
+                    :src="avatar"
+                    :alt="$page.post.author.title"
+                    @error="imageLoadError"
+                    width="100"
+                    class="rounded-full p-4 sm:p-0"
+                  >
+                </g-link>
+              </figure>
+              <div class="px-4 sm:w-4/5 text-center sm:text-left">
+                <h4 class="font-sans text-lg sm:text-xl mb-2 sm:mb-4">
+                  <g-link
+                    :to="`${$page.post.author.path}/`"
+                    class="text-black no-underline capitalize border-b-2 border-transparent hover:border-black transition-border-color"
+                  >{{ titleCase($page.post.author.title) }}</g-link>
+                </h4>
+                <p class="leading-normal">
+                  <g-link
+                    :to="`${$page.post.author.path}/`"
+                    class="text-blue hover:text-blue-darker no-underline transition-color"
+                  >See all posts by {{ titleCase($page.post.author.title) }} &rarr;</g-link>
+                </p>
+              </div>
+            </div>
+          </footer>
+        </article>
+
+        <site-footer class="pb-8 sm:pb-10"/>
+      </main>
+    </transition>
   </Layout>
 </template>
 
@@ -210,3 +212,14 @@ query Post ($path: String) {
   }
 }
 </page-query>
+
+<style scoped>
+.fade-enter-active {
+  transition: opacity 0.35s, transform 0.35s ease;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(5px);
+}
+</style>
