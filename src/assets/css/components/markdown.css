@@ -32,6 +32,7 @@
   }
 
   .shiki-inline {
+    @apply bg-grey-lightest text-grey-darker !important;
     @apply text-xs px-2 py-1 rounded;
   } 
 
