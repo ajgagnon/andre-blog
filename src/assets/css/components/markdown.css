@@ -1,17 +1,25 @@
 .markdown {
-  p, ul, ol {
+  p,
+  ul,
+  ol {
     @apply mb-4;
   }
 
-  ul li, ol li {
+  ul li,
+  ol li {
     @apply mb-4;
   }
 
-  h2, h3, h4, h5, h6 {
-    @apply font-sans text-black my-6;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-black my-6 mt-16;
   }
 
-  h5, h6 {
+  h5,
+  h6 {
     @apply uppercase;
   }
 
@@ -22,7 +30,7 @@
       @apply text-blue-darker;
     }
   }
-   
+
   pre.shiki {
     @apply -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
   }
@@ -34,7 +42,7 @@
   .shiki-inline {
     @apply bg-grey-lightest text-grey-darker !important;
     @apply text-xs px-2 py-1 rounded;
-  } 
+  }
 
   mark {
     @apply bg-yellow-light px-2;
@@ -74,13 +82,16 @@
 .post-cover {
   &::after {
     @apply absolute w-full h-48 pin-l pin-b z-0;
-    content: '';
-    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.5) 100%);
+    content: "";
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
   }
 
   &.fullscreen::after {
     @apply h-full;
-    background: rgba(0,0,0,.15);
+    background: rgba(0, 0, 0, 0.15);
   }
 }
-
