@@ -5,9 +5,9 @@ description: "How to integrate WordPress i18n translations with Vue.js."
 date: 2019-03-06 14:43:24
 author: andre gagnon
 tags:
+    - wordpress
     - translate
     - i18n
-    - wordpress
 cover: https://source.unsplash.com/dC6Pb2JdAqs
 fullscreen: false
 ---
