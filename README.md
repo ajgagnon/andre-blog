@@ -1,4 +1,4 @@
-# Bleda
+# V-Bind Blog
 
 > A blog based on [Gridsome](https://gridsome.org), inspired by the [Attila](https://github.com/zutrinken/attila) Ghost theme and styled with [Tailwind CSS](https://tailwindcss.com).
 
