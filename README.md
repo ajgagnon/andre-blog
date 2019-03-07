@@ -1,20 +1,8 @@
 # Bleda
 
-> A blog starter theme for [Gridsome](https://gridsome.org), inspired by the [Attila](https://github.com/zutrinken/attila) Ghost theme and styled with [Tailwind CSS](https://tailwindcss.com).
+> A blog based on [Gridsome](https://gridsome.org), inspired by the [Attila](https://github.com/zutrinken/attila) Ghost theme and styled with [Tailwind CSS](https://tailwindcss.com).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hellocosmin/gridsome-starter-bleda)
-
-## Demo
-
-- [Page](https://gridsome-starter-bleda.netlify.com/about/)
-- [Single post](https://gridsome-starter-bleda.netlify.com/getting-started-with-gridsome-and-bleda/)
-- [Blog archive](https://gridsome-starter-bleda.netlify.com/)
-- [Tags archive](https://gridsome-starter-bleda.netlify.com/tag/getting-started/)
-- [Author archive](https://gridsome-starter-bleda.netlify.com/author/gridsome/)
-
-## Preview
-
-![Bleda starter for Gridsome devices preview](https://res.cloudinary.com/cossssmin/image/upload/v1551618609/os/gridsome/bleda/bleda-screenshot-devices.jpg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73522bef-3651-4b57-ba18-261a130f04b3/deploy-status)](https://app.netlify.com/sites/v-bind/deploys)
 
 ## Features
 
@@ -56,10 +44,6 @@ rm -rf .git
 # install NPM dependencies
 npm install
 ```
-
-## Configuration
-
-See the [configuration notes](https://gridsome-starter-bleda.netlify.com/getting-started-with-gridsome-and-bleda/#configuration) in the Getting Started demo post.
 
 ## Development
 
