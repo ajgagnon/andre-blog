@@ -28,6 +28,8 @@ npm i github:JeffreyWay/laravel-mix#master --save-dev
 
 ```
 
+[Documentation](https://docs.npmjs.com/cli/install)
+
 This is especially useful for these scenarios:
 
 1. You want to install a package version that has not been updated on npm.
@@ -35,4 +37,4 @@ This is especially useful for these scenarios:
 3. You want to manage private dependencies that you'll never publish to the directory.
 4. Easily testing new or unreleased beta versions.
 
-Be sure you are running [1.1.65 or higher](https://www.npmjs.org/doc/files/package.json.html#github-urls) and have git installed on your machine. This works for github only.
+Be sure you are running **1.1.65 or higher** and have git installed on your machine. This works for github only.
