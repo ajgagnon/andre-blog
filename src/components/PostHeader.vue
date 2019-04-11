@@ -38,7 +38,7 @@
     <div v-else class="pt-24">
       <div class="container max-w-lg mx-auto text-center px-6">
         <p class="text-grey-dark text-xs mb-2 uppercase">{{ post.timeToRead }} min read</p>
-        <h1 class="sm:text-4xl font-sans font-bold mb-2 text-black">{{ post.title }}</h1>
+        <h1 class="sm:text-4xl font-mono font-bold mb-2 text-black">{{ post.title }}</h1>
         <p class="text-grey-dark">
           <span v-if="post.author">
             <g-link
