@@ -8,7 +8,6 @@ tags:
     - npm
     - git
     - github
-cover: https://source.unsplash.com/dC6Pb2JdAqs
 fullscreen: false
 ---
 
