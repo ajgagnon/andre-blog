@@ -37,4 +37,9 @@ This is especially useful for these scenarios:
 3. You want to manage private dependencies that you'll never publish to the directory.
 4. Easily testing new or unreleased beta versions.
 
-Be sure you are running **1.1.65 or higher** and have git installed on your machine. This works for github only.
+### Caveats
+
+1. You need to be running npm **1.1.65 or higher**
+2. You need to have git installed on your machine. 
+3. This works for github only.
+4. The github repository must have a valid package.json file.
