@@ -30,7 +30,7 @@ npm i github:JeffreyWay/laravel-mix#master --save-dev
 
 [Documentation](https://docs.npmjs.com/cli/install)
 
-This is especially useful for these scenarios:
+### Some Use Cases
 
 1. You want to install a package version that has not been updated on npm.
 2. You are developing your own npm package and want to test it before publishing.
